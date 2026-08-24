@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Greycious Jey International School</title>
+<title>Gracious Jey International School</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -245,7 +245,6 @@
   .hero-stats {
     display: flex; gap: 32px; margin-top: 40px; flex-wrap: wrap;
   }
-  .stat { }
   .stat-num { font-size: 28px; font-weight: 700; color: var(--green); font-family: 'Playfair Display', serif; }
   .stat-label { font-size: 13px; color: var(--text-soft); font-weight: 400; }
 
@@ -642,6 +641,89 @@
   .toast.show { transform: translateY(0); opacity: 1; }
   .toast-icon { font-size: 18px; }
 
+  /* Professional visual direction: authentic imagery, restrained surfaces, and stronger hierarchy. */
+  :root {
+    --green: #17633f;
+    --green-light: #268454;
+    --green-pale: #edf4ef;
+    --green-mid: #c8ddd0;
+    --off-white: #f5f7f5;
+    --text-dark: #17241d;
+    --text-mid: #43534a;
+    --text-soft: #718078;
+    --border: #dbe5de;
+    --shadow: 0 10px 30px rgba(23, 56, 39, 0.08);
+    --shadow-hover: 0 16px 38px rgba(23, 56, 39, 0.14);
+    --radius: 8px;
+    --radius-sm: 6px;
+  }
+
+  body { background: #fff; }
+  nav { background: rgba(255, 255, 255, 0.94); box-shadow: 0 1px 0 rgba(23, 56, 39, 0.08); }
+  .logo-icon { border-radius: 6px; }
+  .nav-links a { border-radius: 5px; }
+  .nav-cta, .btn-primary, .btn-outline, .submit-btn { border-radius: 5px !important; }
+
+  .hero {
+    background: linear-gradient(110deg, #f3f7f4 0%, #e5efe8 100%);
+  }
+  .hero::before, .hero::after { display: none; }
+  .hero h1 { letter-spacing: -0.6px; }
+  .hero-badge { border-radius: 4px; box-shadow: none; }
+  .hero-badge::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #c18b3c; }
+  .hero-img-wrap { border-radius: 8px; box-shadow: 0 22px 50px rgba(23, 56, 39, 0.18); }
+  .scene-container {
+    background: linear-gradient(180deg, rgba(20, 62, 42, 0.05), rgba(20, 62, 42, 0.3)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85') center / cover;
+  }
+  .classroom-svg { display: none; }
+  .hero-float-card { display: none; }
+  .stat-num { font-family: 'DM Sans', sans-serif; font-size: 25px; }
+
+  .section-label { letter-spacing: 1.8px; }
+  .section-label::before { width: 28px; height: 1px; border-radius: 0; }
+  .section-title { letter-spacing: -0.4px; }
+  .about-img { border-radius: 6px; }
+  .about-img-inner { font-size: 0; background-position: center; background-size: cover; }
+  .about-img-inner.a { background-image: url('https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&q=85'); }
+  .about-img-inner.b { background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=700&q=85'); }
+  .about-img-inner.c { background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=85'); }
+  .about-img-inner.d { background-image: url('https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=85'); }
+  .about-badge-float { border-radius: 6px; box-shadow: 0 8px 24px rgba(23, 56, 39, 0.14); }
+  .value-list li::before { border-radius: 4px; content: '✓'; }
+
+  .why { background: #f5f7f5; }
+  .feature-card, .test-card, .contact-item { border-radius: 6px; box-shadow: none; }
+  .feature-card:hover { transform: translateY(-3px); }
+  .feature-icon { width: 44px; height: 44px; border-radius: 5px; margin-bottom: 18px; font-size: 0; color: var(--green); font-weight: 700; }
+  .feature-icon::before { font-size: 12px; letter-spacing: 0.5px; }
+  .feature-card:nth-child(1) .feature-icon::before { content: '01'; }
+  .feature-card:nth-child(2) .feature-icon::before { content: '02'; }
+  .feature-card:nth-child(3) .feature-icon::before { content: '03'; }
+  .feature-card:nth-child(4) .feature-icon::before { content: '04'; }
+  .feature-card:nth-child(5) .feature-icon::before { content: '05'; }
+  .feature-card:nth-child(6) .feature-icon::before { content: '06'; }
+  .feature-card:nth-child(7) .feature-icon::before { content: '07'; }
+  .feature-card:nth-child(8) .feature-icon::before { content: '08'; }
+
+  .gallery-item { border-radius: 6px; }
+  .gallery-inner { font-size: 0; background-position: center; background-size: cover; }
+  .gallery-inner svg { display: none; }
+  .gallery-inner.g1 { background-image: linear-gradient(180deg, transparent 40%, rgba(10, 35, 23, 0.4)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=85'); }
+  .gallery-inner.g2 { background-image: linear-gradient(180deg, transparent 40%, rgba(10, 35, 23, 0.35)), url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=700&q=85'); }
+  .gallery-inner.g3 { background-image: linear-gradient(180deg, transparent 40%, rgba(10, 35, 23, 0.35)), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=85'); }
+  .gallery-inner.g4 { background-image: linear-gradient(180deg, transparent 40%, rgba(10, 35, 23, 0.35)), url('https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1000&q=85'); }
+  .gallery-inner.g5 { background-image: linear-gradient(180deg, transparent 40%, rgba(10, 35, 23, 0.35)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=700&q=85'); }
+  .gallery-inner.g6 { background-image: linear-gradient(180deg, transparent 40%, rgba(10, 35, 23, 0.35)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=85'); }
+  .gallery-caption { padding: 42px 18px 16px; }
+
+  .testimonials { background: #eaf2ec; }
+  .test-card::before { font-size: 52px; }
+  .test-avatar { border-radius: 5px; font-size: 0; }
+  .test-avatar::before { content: 'GJ'; font-size: 12px; font-weight: 700; color: var(--green); }
+  .form-card { border-radius: 8px; box-shadow: 0 12px 34px rgba(23, 56, 39, 0.08); }
+  .map-placeholder { border-radius: 6px; }
+  .social-btn { border-radius: 5px; }
+
   /* ──────────────────── RESPONSIVE ──────────────────── */
   @media (max-width: 1024px) {
     .features-grid { grid-template-columns: repeat(2, 1fr); }
@@ -732,12 +814,12 @@
 <section class="hero" id="home">
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-badge">Admissions Open — 2024/2025 Session</div>
+      <div class="hero-badge">Admissions open for the 2026/2027 session</div>
       <h1>Building<br><span>Future Leaders</span><br>One Child at a Time</h1>
-      <p class="hero-desc">Greycious Jey International School provides a nurturing, disciplined, and academically excellent environment where every child from Nursery to JSS3 can discover their potential and thrive.</p>
+      <p class="hero-desc">Gracious Jey International School provides a nurturing, disciplined, and academically excellent environment where every child from Nursery to JSS3 can discover their potential and thrive.</p>
       <div class="hero-btns">
-        <a href="#admission" class="btn-primary">✏️ Apply for Admission</a>
-        <a href="#contact" class="btn-outline">📞 Contact Us</a>
+        <a href="#admission" class="btn-primary">Apply for Admission <span aria-hidden="true">→</span></a>
+        <a href="#contact" class="btn-outline">Contact the School <span aria-hidden="true">→</span></a>
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -824,7 +906,7 @@
             <path d="M210,260 Q260,230 310,260" fill="#2E7D52" stroke="#1B5E3A" stroke-width="2"/>
             <!-- School name on building -->
             <rect x="140" y="235" width="240" height="22" fill="#2E7D52" rx="3"/>
-            <text x="260" y="250" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">GREYCIOUS JEY INT'L SCHOOL</text>
+            <text x="260" y="250" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">GRACIOUS JEY INT'L SCHOOL</text>
 
             <!-- Ground -->
             <rect x="0" y="330" width="520" height="60" fill="url(#grassGrad)"/>
@@ -935,7 +1017,7 @@
         <div class="section-label">About Our School</div>
         <h2 class="section-title">Shaping Young Minds for<br><span>a Better Tomorrow</span></h2>
         <p class="section-desc">
-          Greycious Jey International School is a private co-educational institution dedicated to providing holistic, high-quality education from the nursery level through JSS3. We combine academic rigour with moral values, equipping every student with the knowledge, discipline, and character to succeed in life.
+          Gracious Jey International School is a private co-educational institution dedicated to providing holistic, high-quality education from the nursery level through JSS3. We combine academic rigour with moral values, equipping every student with the knowledge, discipline, and character to succeed in life.
         </p>
         <p class="section-desc" style="margin-top: 12px;">
           Founded with the vision of raising responsible and intellectually strong future leaders, our school provides a safe, structured, and inspiring learning environment where children flourish academically, socially, and morally.
@@ -959,7 +1041,7 @@
     <div class="why-header fade-up">
       <div class="section-label">Why Choose Us</div>
       <h2 class="section-title">Everything Your Child<br><span>Needs to Excel</span></h2>
-      <p class="section-desc">We go beyond textbooks. At Greycious Jey, we invest in your child's complete development — academically, morally, and socially.</p>
+      <p class="section-desc">We go beyond textbooks. At Gracious Jey, we invest in your child's complete development — academically, morally, and socially.</p>
     </div>
 
     <div class="features-grid">
@@ -1012,7 +1094,7 @@
   <div class="container">
     <div class="gallery-header fade-up">
       <div class="section-label">School Life</div>
-      <h2 class="section-title">A Glimpse of Life at<br><span>Greycious Jey</span></h2>
+      <h2 class="section-title">A Glimpse of Life at<br><span>Gracious Jey</span></h2>
       <p class="section-desc" style="margin: 0 auto;">From classrooms to the playground, every corner of our school is designed to inspire, engage, and nurture.</p>
     </div>
 
@@ -1256,7 +1338,7 @@
     <div class="test-grid">
       <div class="test-card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="test-text">Since my daughter enrolled at Greycious Jey, her confidence, reading ability, and academic performance have improved dramatically. The teachers are attentive and truly care about each child's progress. We're proud parents!</p>
+        <p class="test-text">Since my daughter enrolled at Gracious Jey, her confidence, reading ability, and academic performance have improved dramatically. The teachers are attentive and truly care about each child's progress. We're proud parents!</p>
         <div class="test-author">
           <div class="test-avatar">👩</div>
           <div>
@@ -1268,7 +1350,7 @@
 
       <div class="test-card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="test-text">I love school because my teachers make learning fun and easy to understand. We do sports, science experiments, and even drama. Greycious Jey is the best school I've ever attended!</p>
+        <p class="test-text">I love school because my teachers make learning fun and easy to understand. We do sports, science experiments, and even drama. Gracious Jey is the best school I've ever attended!</p>
         <div class="test-author">
           <div class="test-avatar">👦</div>
           <div>
@@ -1292,7 +1374,7 @@
 
       <div class="test-card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="test-text">What sets Greycious Jey apart is the genuine love the teachers show to the children. My twins are in Primary 4 and 5, and every day they come home excited about something new they learned. That says it all.</p>
+        <p class="test-text">What sets Gracious Jey apart is the genuine love the teachers show to the children. My twins are in Primary 4 and 5, and every day they come home excited about something new they learned. That says it all.</p>
         <div class="test-author">
           <div class="test-avatar">👩</div>
           <div>
@@ -1316,7 +1398,7 @@
 
       <div class="test-card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="test-text">I was nervous changing schools but Greycious Jey made me feel so welcomed. My form teacher knows my name, checks on me, and always helps me understand difficult topics. I'm happy here.</p>
+        <p class="test-text">I was nervous changing schools but Gracious Jey made me feel so welcomed. My form teacher knows my name, checks on me, and always helps me understand difficult topics. I'm happy here.</p>
         <div class="test-author">
           <div class="test-avatar">👧</div>
           <div>
@@ -1370,14 +1452,14 @@
         </ul>
 
         <div style="margin-top: 32px; padding: 20px; background: var(--green-pale); border-radius: 14px; border: 1.5px solid var(--green-mid);">
-          <div style="font-size: 13px; font-weight: 700; color: var(--green); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">📅 Admission Period</div>
-          <div style="font-size: 15px; color: var(--text-dark); font-weight: 600;">January – August 2025</div>
-          <div style="font-size: 13px; color: var(--text-soft); margin-top: 4px;">New session begins September 2025</div>
+          <div style="font-size: 13px; font-weight: 700; color: var(--green); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Admission period</div>
+          <div style="font-size: 15px; color: var(--text-dark); font-weight: 600;">January - August 2026</div>
+          <div style="font-size: 13px; color: var(--text-soft); margin-top: 4px;">New session begins September 2026</div>
         </div>
       </div>
 
       <div class="form-card fade-up" id="formCard">
-        <div class="form-title">📝 Student Admission Application</div>
+        <div class="form-title">Student Admission Application</div>
 
         <div id="admissionForm">
           <div class="form-divider">Student Information</div>
@@ -1472,8 +1554,8 @@
         <div class="success-msg" id="successMsg">
           <div class="success-icon">🎉</div>
           <h3>Application Submitted!</h3>
-          <p>Thank you for applying to Greycious Jey International School.<br><br>
-          Your application reference is <strong id="refNumber" style="color: var(--green);">GJ-2025-0001</strong>.<br><br>
+          <p>Thank you for applying to Gracious Jey International School.<br><br>
+          Your application reference is <strong id="refNumber" style="color: var(--green);">GJ-2026-0001</strong>.<br><br>
           Our admissions team will contact you within <strong>48 hours</strong> to schedule your child's assessment.<br><br>
           For enquiries, call: <strong>+234 801 234 5678</strong></p>
           <button class="btn-primary" style="margin-top: 24px; border: none; cursor: pointer;" onclick="resetForm()">Submit Another Application</button>
@@ -1503,7 +1585,7 @@
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">📞</div>
+            <div class="contact-icon" aria-hidden="true">TEL</div>
             <div>
               <div class="contact-label">Phone Numbers</div>
               <div class="contact-value">
@@ -1532,7 +1614,7 @@
       <div class="fade-up">
         <div class="map-placeholder">
           <div class="map-pin">📍</div>
-          <div class="map-text">Greycious Jey Int'l School</div>
+          <div class="map-text">Gracious Jey Int'l School</div>
           <div class="map-sub">12 Education Close, Abuja, FCT</div>
           <div style="margin-top: 18px;">
             <a href="https://maps.google.com" target="_blank" class="btn-primary" style="font-size: 13.5px; padding: 10px 22px;">
@@ -1552,7 +1634,7 @@
       <div class="logo">
         <div class="logo-icon">GJ</div>
         <div class="logo-text">
-          <span class="logo-name">Greycious Jey Int'l</span>
+          <span class="logo-name">Gracious Jey Int'l</span>
           <span class="logo-tag">Excellence in Education</span>
         </div>
       </div>
@@ -1602,7 +1684,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 <span class="green-text">Greycious Jey International School</span>. All rights reserved.</p>
+    <p>© 2026 <span class="green-text">Gracious Jey International School</span>. All rights reserved.</p>
     <p>Designed with ❤️ for quality education in Nigeria</p>
   </div>
 </footer>
@@ -1677,7 +1759,7 @@
 
     // Build admission record
     const record = {
-      id: 'GJ-2025-' + String(admissions.length + 1).padStart(4, '0'),
+      id: 'GJ-2026-' + String(admissions.length + 1).padStart(4, '0'),
       firstName: document.getElementById('firstName').value.trim(),
       lastName: document.getElementById('lastName').value.trim(),
       dob: document.getElementById('dob').value,
